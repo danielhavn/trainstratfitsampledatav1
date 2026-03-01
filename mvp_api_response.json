@@ -1,0 +1,27 @@
+{
+  "currentVIX": 21.97,
+  "ivPercentile": 61.2,
+  "volatilityRegime": "NORMAL",
+  "volatilityStability": "STABLE",
+  "strategies": {
+    "collar": {
+      "name": "Collar",
+      "description": "Best for normal-to-elevated volatility with downside protection",
+      "type": "protective",
+      "ruleScore": 89.0,
+      "modelScore": null,
+      "recommended": true,
+      "explanation": []
+    },
+    "covered-call": {
+      "name": "Covered Call",
+      "description": "Generate income while holding stock",
+      "type": "income",
+      "ruleScore": 63.0,
+      "modelScore": null,
+      "recommended": false,
+      "explanation": []
+    }
+  },
+  "timestamp": "2026-03-01T00:19:03.617241Z"
+}
