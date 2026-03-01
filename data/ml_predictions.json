@@ -1,0 +1,1831 @@
+{
+  "version": "1.0",
+  "generated_date": "2026-03-01",
+  "total_scenarios": 100,
+  "source": "Enhanced dataset v2 (3,308 training samples)",
+  "description": "100 representative market scenarios selected from ML training data covering all volatility regimes and stability conditions",
+  "scenarios": [
+    {
+      "id": 1,
+      "name": "LOW_VOL_STABLE_MIN_VIX",
+      "description": "Minimal volatility, stable conditions",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 23.9,
+        "vvix": 108.0,
+        "regime": "LOW",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 72,
+        "covered_call_score": 81,
+        "iron_condor_score": 80,
+        "cash_secured_put_score": 68
+      }
+    },
+    {
+      "id": 2,
+      "name": "LOW_VOL_STABLE_LOW_IV",
+      "description": "Low volatility, very low IV percentile",
+      "market_conditions": {
+        "vix": 17.07,
+        "iv_percentile": 8.0,
+        "vvix": 82.5,
+        "regime": "LOW",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 66,
+        "covered_call_score": 89,
+        "iron_condor_score": 86,
+        "cash_secured_put_score": 55
+      }
+    },
+    {
+      "id": 3,
+      "name": "LOW_VOL_STABLE_MID_IV",
+      "description": "Low volatility, moderate IV percentile",
+      "market_conditions": {
+        "vix": 13.08,
+        "iv_percentile": 10.5,
+        "vvix": 98.3,
+        "regime": "LOW",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 63,
+        "covered_call_score": 84,
+        "iron_condor_score": 80,
+        "cash_secured_put_score": 51
+      }
+    },
+    {
+      "id": 4,
+      "name": "LOW_VOL_STABLE_HIGH_VIX",
+      "description": "Higher VIX but still low regime, stable",
+      "market_conditions": {
+        "vix": 21.4,
+        "iv_percentile": 23.3,
+        "vvix": 113.5,
+        "regime": "LOW",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 69,
+        "covered_call_score": 82,
+        "iron_condor_score": 80,
+        "cash_secured_put_score": 62
+      }
+    },
+    {
+      "id": 5,
+      "name": "LOW_VOL_STABLE_VERY_HIGH_VIX",
+      "description": "Very high VIX in low regime",
+      "market_conditions": {
+        "vix": 30.77,
+        "iv_percentile": 28.9,
+        "vvix": 105.0,
+        "regime": "LOW",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 75,
+        "covered_call_score": 82,
+        "iron_condor_score": 77,
+        "cash_secured_put_score": 77
+      }
+    },
+    {
+      "id": 6,
+      "name": "LOW_VOL_UNSTABLE_LOW_IV",
+      "description": "Low volatility but unstable, low IV",
+      "market_conditions": {
+        "vix": 13.64,
+        "iv_percentile": 16.2,
+        "vvix": 92.8,
+        "regime": "LOW",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 71,
+        "covered_call_score": 83,
+        "iron_condor_score": 71,
+        "cash_secured_put_score": 58
+      }
+    },
+    {
+      "id": 7,
+      "name": "LOW_VOL_UNSTABLE_MID",
+      "description": "Low volatility, unstable, moderate IV",
+      "market_conditions": {
+        "vix": 12.7,
+        "iv_percentile": 23.8,
+        "vvix": 86.3,
+        "regime": "LOW",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 69,
+        "covered_call_score": 80,
+        "iron_condor_score": 70,
+        "cash_secured_put_score": 66
+      }
+    },
+    {
+      "id": 8,
+      "name": "LOW_VOL_UNSTABLE_HIGH_VIX",
+      "description": "Higher VIX, low regime, unstable",
+      "market_conditions": {
+        "vix": 24.32,
+        "iv_percentile": 17.6,
+        "vvix": 100.8,
+        "regime": "LOW",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 68,
+        "covered_call_score": 86,
+        "iron_condor_score": 72,
+        "cash_secured_put_score": 61
+      }
+    },
+    {
+      "id": 9,
+      "name": "LOW_VOL_UNSTABLE_VERY_HIGH_VIX",
+      "description": "Very high VIX, low regime, unstable",
+      "market_conditions": {
+        "vix": 33.12,
+        "iv_percentile": 22.2,
+        "vvix": 73.1,
+        "regime": "LOW",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 72,
+        "covered_call_score": 83,
+        "iron_condor_score": 71,
+        "cash_secured_put_score": 63
+      }
+    },
+    {
+      "id": 10,
+      "name": "LOW_VOL_UNSTABLE_EXTREME_VIX",
+      "description": "Extreme VIX in low regime, unstable",
+      "market_conditions": {
+        "vix": 34.68,
+        "iv_percentile": 5.0,
+        "vvix": 124.8,
+        "regime": "LOW",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 73,
+        "covered_call_score": 80,
+        "iron_condor_score": 80,
+        "cash_secured_put_score": 42
+      }
+    },
+    {
+      "id": 11,
+      "name": "NORMAL_VOL_STABLE_LOW_IV",
+      "description": "Normal volatility, stable, low IV",
+      "market_conditions": {
+        "vix": 13.35,
+        "iv_percentile": 30.7,
+        "vvix": 76.9,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 72,
+        "covered_call_score": 81,
+        "iron_condor_score": 73,
+        "cash_secured_put_score": 74
+      }
+    },
+    {
+      "id": 12,
+      "name": "NORMAL_VOL_STABLE_MID_IV",
+      "description": "Normal volatility, stable, mid IV",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 38.7,
+        "vvix": 105.1,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 80,
+        "covered_call_score": 74,
+        "iron_condor_score": 63,
+        "cash_secured_put_score": 83
+      }
+    },
+    {
+      "id": 13,
+      "name": "NORMAL_VOL_STABLE_HIGH_IV",
+      "description": "Normal volatility, stable, high IV",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 49.3,
+        "vvix": 63.9,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 82,
+        "covered_call_score": 70,
+        "iron_condor_score": 50,
+        "cash_secured_put_score": 78
+      }
+    },
+    {
+      "id": 14,
+      "name": "NORMAL_VOL_STABLE_VERY_HIGH_IV",
+      "description": "Normal volatility, stable, very high IV",
+      "market_conditions": {
+        "vix": 12.56,
+        "iv_percentile": 52.3,
+        "vvix": 95.8,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 82,
+        "covered_call_score": 67,
+        "iron_condor_score": 48,
+        "cash_secured_put_score": 80
+      }
+    },
+    {
+      "id": 15,
+      "name": "NORMAL_VOL_STABLE_MID_VIX",
+      "description": "Normal volatility, mid-range VIX",
+      "market_conditions": {
+        "vix": 14.84,
+        "iv_percentile": 56.3,
+        "vvix": 82.8,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 83,
+        "covered_call_score": 62,
+        "iron_condor_score": 46,
+        "cash_secured_put_score": 80
+      }
+    },
+    {
+      "id": 16,
+      "name": "NORMAL_VOL_STABLE_HIGH_VIX",
+      "description": "Normal volatility, higher VIX, stable",
+      "market_conditions": {
+        "vix": 21.97,
+        "iv_percentile": 61.2,
+        "vvix": 86.5,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 89,
+        "covered_call_score": 63,
+        "iron_condor_score": 40,
+        "cash_secured_put_score": 75
+      }
+    },
+    {
+      "id": 17,
+      "name": "NORMAL_VOL_STABLE_VERY_HIGH_VIX",
+      "description": "Normal volatility, very high VIX",
+      "market_conditions": {
+        "vix": 22.66,
+        "iv_percentile": 67.4,
+        "vvix": 112.2,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 90,
+        "covered_call_score": 59,
+        "iron_condor_score": 33,
+        "cash_secured_put_score": 77
+      }
+    },
+    {
+      "id": 18,
+      "name": "NORMAL_VOL_STABLE_ELEVATED_VIX",
+      "description": "Normal regime, elevated VIX level",
+      "market_conditions": {
+        "vix": 25.23,
+        "iv_percentile": 31.6,
+        "vvix": 90.5,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 67,
+        "covered_call_score": 84,
+        "iron_condor_score": 75,
+        "cash_secured_put_score": 74
+      }
+    },
+    {
+      "id": 19,
+      "name": "NORMAL_VOL_STABLE_HIGH_VIX_HIGH_IV",
+      "description": "Normal regime, high VIX and IV",
+      "market_conditions": {
+        "vix": 30.98,
+        "iv_percentile": 52.3,
+        "vvix": 110.6,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 83,
+        "covered_call_score": 65,
+        "iron_condor_score": 46,
+        "cash_secured_put_score": 83
+      }
+    },
+    {
+      "id": 20,
+      "name": "NORMAL_VOL_STABLE_EXTREME_VIX",
+      "description": "Normal regime, extreme VIX level",
+      "market_conditions": {
+        "vix": 33.98,
+        "iv_percentile": 60.7,
+        "vvix": 139.6,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 86,
+        "covered_call_score": 58,
+        "iron_condor_score": 39,
+        "cash_secured_put_score": 82
+      }
+    },
+       {
+      "id": 21,
+      "name": "NORMAL_VOL_UNSTABLE_LOW_IV",
+      "description": "Normal volatility, unstable, low IV",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 38.3,
+        "vvix": 50.0,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 77,
+        "covered_call_score": 69,
+        "iron_condor_score": 63,
+        "cash_secured_put_score": 76
+      }
+    },
+    {
+      "id": 22,
+      "name": "NORMAL_VOL_UNSTABLE_MID_IV",
+      "description": "Normal volatility, unstable, mid IV",
+      "market_conditions": {
+        "vix": 14.64,
+        "iv_percentile": 45.0,
+        "vvix": 93.5,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 84,
+        "covered_call_score": 63,
+        "iron_condor_score": 50,
+        "cash_secured_put_score": 75
+      }
+    },
+    {
+      "id": 23,
+      "name": "NORMAL_VOL_UNSTABLE_HIGH_IV",
+      "description": "Normal volatility, unstable, high IV",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 54.8,
+        "vvix": 77.7,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 87,
+        "covered_call_score": 62,
+        "iron_condor_score": 40,
+        "cash_secured_put_score": 74
+      }
+    },
+    {
+      "id": 24,
+      "name": "NORMAL_VOL_UNSTABLE_VERY_HIGH_IV",
+      "description": "Normal volatility, unstable, very high IV",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 64.5,
+        "vvix": 118.0,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 93,
+        "covered_call_score": 53,
+        "iron_condor_score": 32,
+        "cash_secured_put_score": 70
+      }
+    },
+    {
+      "id": 25,
+      "name": "NORMAL_VOL_UNSTABLE_MID_VIX",
+      "description": "Normal volatility, unstable, mid VIX",
+      "market_conditions": {
+        "vix": 13.76,
+        "iv_percentile": 47.4,
+        "vvix": 102.8,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 81,
+        "covered_call_score": 63,
+        "iron_condor_score": 46,
+        "cash_secured_put_score": 72
+      }
+    },
+    {
+      "id": 26,
+      "name": "NORMAL_VOL_UNSTABLE_HIGH_VIX",
+      "description": "Normal volatility, unstable, high VIX",
+      "market_conditions": {
+        "vix": 18.78,
+        "iv_percentile": 45.6,
+        "vvix": 70.7,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 83,
+        "covered_call_score": 66,
+        "iron_condor_score": 51,
+        "cash_secured_put_score": 72
+      }
+    },
+    {
+      "id": 27,
+      "name": "NORMAL_VOL_UNSTABLE_VERY_HIGH_VIX",
+      "description": "Normal volatility, unstable, very high VIX",
+      "market_conditions": {
+        "vix": 21.94,
+        "iv_percentile": 49.5,
+        "vvix": 51.8,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 85,
+        "covered_call_score": 65,
+        "iron_condor_score": 46,
+        "cash_secured_put_score": 75
+      }
+    },
+    {
+      "id": 28,
+      "name": "NORMAL_VOL_UNSTABLE_HIGH_VIX_HIGH_IV",
+      "description": "Normal volatility, unstable, high VIX and IV",
+      "market_conditions": {
+        "vix": 20.6,
+        "iv_percentile": 67.2,
+        "vvix": 131.9,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 94,
+        "covered_call_score": 54,
+        "iron_condor_score": 33,
+        "cash_secured_put_score": 72
+      }
+    },
+    {
+      "id": 29,
+      "name": "NORMAL_VOL_UNSTABLE_ELEVATED_VIX",
+      "description": "Normal volatility, unstable, elevated VIX",
+      "market_conditions": {
+        "vix": 27.2,
+        "iv_percentile": 50.8,
+        "vvix": 103.1,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 88,
+        "covered_call_score": 61,
+        "iron_condor_score": 42,
+        "cash_secured_put_score": 81
+      }
+    },
+    {
+      "id": 30,
+      "name": "NORMAL_VOL_UNSTABLE_EXTREME_VIX",
+      "description": "Normal regime, unstable, extreme VIX",
+      "market_conditions": {
+        "vix": 35.27,
+        "iv_percentile": 39.6,
+        "vvix": 120.8,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 79,
+        "covered_call_score": 69,
+        "iron_condor_score": 56,
+        "cash_secured_put_score": 72
+      }
+    },
+    {
+      "id": 31,
+      "name": "ELEVATED_VOL_STABLE_LOW_IV",
+      "description": "Elevated volatility, stable, low IV",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 74.5,
+        "vvix": 135.8,
+        "regime": "ELEVATED",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 51,
+        "iron_condor_score": 38,
+        "cash_secured_put_score": 73
+      }
+    },
+    {
+      "id": 32,
+      "name": "ELEVATED_VOL_STABLE_MID_IV",
+      "description": "Elevated volatility, stable, mid IV",
+      "market_conditions": {
+        "vix": 14.38,
+        "iv_percentile": 71.1,
+        "vvix": 109.4,
+        "regime": "ELEVATED",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 94,
+        "covered_call_score": 53,
+        "iron_condor_score": 39,
+        "cash_secured_put_score": 75
+      }
+    },
+    {
+      "id": 33,
+      "name": "ELEVATED_VOL_STABLE_HIGH_IV",
+      "description": "Elevated volatility, stable, high IV",
+      "market_conditions": {
+        "vix": 16.6,
+        "iv_percentile": 71.2,
+        "vvix": 52.9,
+        "regime": "ELEVATED",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 93,
+        "covered_call_score": 58,
+        "iron_condor_score": 44,
+        "cash_secured_put_score": 77
+      }
+    },
+    {
+      "id": 34,
+      "name": "ELEVATED_VOL_STABLE_MID_VIX",
+      "description": "Elevated volatility, stable, mid VIX",
+      "market_conditions": {
+        "vix": 18.12,
+        "iv_percentile": 71.2,
+        "vvix": 101.1,
+        "regime": "ELEVATED",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 92,
+        "covered_call_score": 57,
+        "iron_condor_score": 36,
+        "cash_secured_put_score": 74
+      }
+    },
+    {
+      "id": 35,
+      "name": "ELEVATED_VOL_STABLE_HIGH_VIX",
+      "description": "Elevated volatility, stable, high VIX",
+      "market_conditions": {
+        "vix": 20.86,
+        "iv_percentile": 72.1,
+        "vvix": 104.0,
+        "regime": "ELEVATED",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 93,
+        "covered_call_score": 51,
+        "iron_condor_score": 38,
+        "cash_secured_put_score": 74
+      }
+    },
+    {
+      "id": 36,
+      "name": "ELEVATED_VOL_STABLE_VERY_HIGH_VIX",
+      "description": "Elevated volatility, stable, very high VIX",
+      "market_conditions": {
+        "vix": 21.28,
+        "iv_percentile": 72.5,
+        "vvix": 105.9,
+        "regime": "ELEVATED",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 93,
+        "covered_call_score": 48,
+        "iron_condor_score": 41,
+        "cash_secured_put_score": 74
+      }
+    },
+    {
+      "id": 37,
+      "name": "ELEVATED_VOL_STABLE_EXTREME_VIX",
+      "description": "Elevated volatility, stable, extreme VIX",
+      "market_conditions": {
+        "vix": 26.41,
+        "iv_percentile": 71.6,
+        "vvix": 110.5,
+        "regime": "ELEVATED",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 88,
+        "covered_call_score": 53,
+        "iron_condor_score": 35,
+        "cash_secured_put_score": 78
+      }
+    },
+    {
+      "id": 38,
+      "name": "ELEVATED_VOL_STABLE_VERY_EXTREME_VIX",
+      "description": "Elevated volatility, stable, very extreme VIX",
+      "market_conditions": {
+        "vix": 32.09,
+        "iv_percentile": 77.2,
+        "vvix": 82.9,
+        "regime": "ELEVATED",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 53,
+        "iron_condor_score": 38,
+        "cash_secured_put_score": 78
+      }
+    },
+    {
+      "id": 39,
+      "name": "ELEVATED_VOL_UNSTABLE_LOW_VIX",
+      "description": "Elevated volatility, unstable, low VIX",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 74.0,
+        "vvix": 59.6,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 92,
+        "covered_call_score": 51,
+        "iron_condor_score": 32,
+        "cash_secured_put_score": 68
+      }
+    },
+    {
+      "id": 40,
+      "name": "ELEVATED_VOL_UNSTABLE_MID_VIX",
+      "description": "Elevated volatility, unstable, mid VIX",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 75.1,
+        "vvix": 68.2,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 48,
+        "iron_condor_score": 32,
+        "cash_secured_put_score": 71
+      }
+    },
+    {
+      "id": 41,
+      "name": "ELEVATED_VOL_UNSTABLE_HIGH_IV",
+      "description": "Elevated volatility, unstable, high IV",
+      "market_conditions": {
+        "vix": 12.06,
+        "iv_percentile": 76.9,
+        "vvix": 79.6,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 47,
+        "iron_condor_score": 34,
+        "cash_secured_put_score": 66
+      }
+    },
+    {
+      "id": 42,
+      "name": "ELEVATED_VOL_UNSTABLE_HIGHER_VIX",
+      "description": "Elevated volatility, unstable, higher VIX",
+      "market_conditions": {
+        "vix": 12.8,
+        "iv_percentile": 72.8,
+        "vvix": 109.3,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 49,
+        "iron_condor_score": 30,
+        "cash_secured_put_score": 74
+      }
+    },
+    {
+      "id": 43,
+      "name": "ELEVATED_VOL_UNSTABLE_MID_HIGH_VIX",
+      "description": "Elevated volatility, unstable, mid-high VIX",
+      "market_conditions": {
+        "vix": 13.15,
+        "iv_percentile": 75.0,
+        "vvix": 95.3,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 52,
+        "iron_condor_score": 31,
+        "cash_secured_put_score": 69
+      }
+    },
+    {
+      "id": 44,
+      "name": "ELEVATED_VOL_UNSTABLE_HIGH_VIX",
+      "description": "Elevated volatility, unstable, high VIX",
+      "market_conditions": {
+        "vix": 15.59,
+        "iv_percentile": 78.3,
+        "vvix": 82.1,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 51,
+        "iron_condor_score": 34,
+        "cash_secured_put_score": 66
+      }
+    },
+    {
+      "id": 45,
+      "name": "ELEVATED_VOL_UNSTABLE_VERY_HIGH_VIX",
+      "description": "Elevated volatility, unstable, very high VIX",
+      "market_conditions": {
+        "vix": 16.5,
+        "iv_percentile": 74.7,
+        "vvix": 114.6,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 49,
+        "iron_condor_score": 28,
+        "cash_secured_put_score": 66
+      }
+    },
+    {
+      "id": 46,
+      "name": "ELEVATED_VOL_UNSTABLE_HIGHER_VIX_2",
+      "description": "Elevated volatility, unstable, higher VIX range",
+      "market_conditions": {
+        "vix": 16.74,
+        "iv_percentile": 70.8,
+        "vvix": 56.1,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 93,
+        "covered_call_score": 49,
+        "iron_condor_score": 28,
+        "cash_secured_put_score": 76
+      }
+    },
+    {
+      "id": 47,
+      "name": "ELEVATED_VOL_UNSTABLE_ELEVATED_VIX",
+      "description": "Elevated volatility, unstable, elevated VIX",
+      "market_conditions": {
+        "vix": 17.3,
+        "iv_percentile": 79.5,
+        "vvix": 113.6,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 94,
+        "covered_call_score": 44,
+        "iron_condor_score": 28,
+        "cash_secured_put_score": 62
+      }
+    },
+    {
+      "id": 48,
+      "name": "ELEVATED_VOL_UNSTABLE_MID_HIGH_VIX_2",
+      "description": "Elevated volatility, unstable, mid-high VIX 2",
+      "market_conditions": {
+        "vix": 17.94,
+        "iv_percentile": 72.9,
+        "vvix": 122.8,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 93,
+        "covered_call_score": 52,
+        "iron_condor_score": 28,
+        "cash_secured_put_score": 70
+      }
+    },
+    {
+      "id": 49,
+      "name": "ELEVATED_VOL_UNSTABLE_VERY_HIGH_VIX_2",
+      "description": "Elevated volatility, unstable, very high VIX 2",
+      "market_conditions": {
+        "vix": 17.99,
+        "iv_percentile": 76.9,
+        "vvix": 79.3,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 46,
+        "iron_condor_score": 32,
+        "cash_secured_put_score": 71
+      }
+    },
+    {
+      "id": 50,
+      "name": "ELEVATED_VOL_UNSTABLE_HIGH_VIX_HIGH_IV",
+      "description": "Elevated volatility, unstable, high VIX and IV",
+      "market_conditions": {
+        "vix": 19.5,
+        "iv_percentile": 71.4,
+        "vvix": 95.7,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 51,
+        "iron_condor_score": 30,
+        "cash_secured_put_score": 70
+      }
+    },
+    {
+      "id": 51,
+      "name": "ELEVATED_VOL_UNSTABLE_ELEVATED_VIX_2",
+      "description": "Elevated volatility, unstable, elevated VIX 2",
+      "market_conditions": {
+        "vix": 20.33,
+        "iv_percentile": 72.3,
+        "vvix": 79.4,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 48,
+        "iron_condor_score": 32,
+        "cash_secured_put_score": 74
+      }
+    },
+    {
+      "id": 52,
+      "name": "ELEVATED_VOL_UNSTABLE_VERY_ELEVATED_VIX",
+      "description": "Elevated volatility, unstable, very elevated VIX",
+      "market_conditions": {
+        "vix": 21.83,
+        "iv_percentile": 70.9,
+        "vvix": 98.3,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 94,
+        "covered_call_score": 53,
+        "iron_condor_score": 28,
+        "cash_secured_put_score": 69
+      }
+    },
+    {
+      "id": 53,
+      "name": "ELEVATED_VOL_UNSTABLE_EXTREME_VIX",
+      "description": "Elevated volatility, unstable, extreme VIX",
+      "market_conditions": {
+        "vix": 23.94,
+        "iv_percentile": 79.3,
+        "vvix": 115.0,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 47,
+        "iron_condor_score": 31,
+        "cash_secured_put_score": 68
+      }
+    },
+    {
+      "id": 54,
+      "name": "ELEVATED_VOL_UNSTABLE_EXTREME_VIX_2",
+      "description": "Elevated volatility, unstable, extreme VIX 2",
+      "market_conditions": {
+        "vix": 24.46,
+        "iv_percentile": 72.7,
+        "vvix": 58.9,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 91,
+        "covered_call_score": 53,
+        "iron_condor_score": 33,
+        "cash_secured_put_score": 68
+      }
+    },
+    {
+      "id": 55,
+      "name": "ELEVATED_VOL_UNSTABLE_VERY_EXTREME_VIX",
+      "description": "Elevated volatility, unstable, very extreme VIX",
+      "market_conditions": {
+        "vix": 25.16,
+        "iv_percentile": 71.2,
+        "vvix": 105.9,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 51,
+        "iron_condor_score": 30,
+        "cash_secured_put_score": 67
+      }
+    },
+    {
+      "id": 56,
+      "name": "ELEVATED_VOL_UNSTABLE_EXTREME_HIGH_VIX",
+      "description": "Elevated volatility, unstable, extreme high VIX",
+      "market_conditions": {
+        "vix": 26.0,
+        "iv_percentile": 79.8,
+        "vvix": 73.2,
+        "regime": "ELEVATED",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 53,
+        "iron_condor_score": 32,
+        "cash_secured_put_score": 70
+      }
+    },
+    {
+      "id": 57,
+      "name": "CRISIS_VOL_STABLE_LOW_VIX",
+      "description": "Crisis volatility, stable, low VIX",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 95.0,
+        "vvix": 96.7,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 93,
+        "covered_call_score": 53,
+        "iron_condor_score": 38,
+        "cash_secured_put_score": 51
+      }
+    },
+    {
+      "id": 58,
+      "name": "CRISIS_VOL_STABLE_MID_IV",
+      "description": "Crisis volatility, stable, mid IV",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 95.0,
+        "vvix": 73.9,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 93,
+        "covered_call_score": 52,
+        "iron_condor_score": 36,
+        "cash_secured_put_score": 51
+      }
+    },
+    {
+      "id": 59,
+      "name": "CRISIS_VOL_STABLE_HIGH_IV",
+      "description": "Crisis volatility, stable, high IV",
+      "market_conditions": {
+        "vix": 10.83,
+        "iv_percentile": 81.7,
+        "vvix": 87.2,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 92,
+        "covered_call_score": 53,
+        "iron_condor_score": 35,
+        "cash_secured_put_score": 71
+      }
+    },
+    {
+      "id": 60,
+      "name": "CRISIS_VOL_STABLE_VERY_HIGH_IV",
+      "description": "Crisis volatility, stable, very high IV",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 82.5,
+        "vvix": 79.3,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 92,
+        "covered_call_score": 50,
+        "iron_condor_score": 32,
+        "cash_secured_put_score": 65
+      }
+    },
+     {
+      "id": 61,
+      "name": "CRISIS_VOL_STABLE_MID_VIX",
+      "description": "Crisis volatility, stable, mid VIX",
+      "market_conditions": {
+        "vix": 11.3,
+        "iv_percentile": 91.8,
+        "vvix": 106.9,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 52,
+        "iron_condor_score": 35,
+        "cash_secured_put_score": 56
+      }
+    },
+    {
+      "id": 62,
+      "name": "CRISIS_VOL_STABLE_HIGH_VIX",
+      "description": "Crisis volatility, stable, high VIX",
+      "market_conditions": {
+        "vix": 14.2,
+        "iv_percentile": 89.1,
+        "vvix": 73.7,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 89,
+        "covered_call_score": 52,
+        "iron_condor_score": 35,
+        "cash_secured_put_score": 62
+      }
+    },
+    {
+      "id": 63,
+      "name": "CRISIS_VOL_STABLE_VERY_HIGH_VIX",
+      "description": "Crisis volatility, stable, very high VIX",
+      "market_conditions": {
+        "vix": 21.88,
+        "iv_percentile": 95.0,
+        "vvix": 50.0,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 91,
+        "covered_call_score": 50,
+        "iron_condor_score": 31,
+        "cash_secured_put_score": 48
+      }
+    },
+    {
+      "id": 64,
+      "name": "CRISIS_VOL_STABLE_ELEVATED_VIX",
+      "description": "Crisis volatility, stable, elevated VIX",
+      "market_conditions": {
+        "vix": 35.08,
+        "iv_percentile": 86.4,
+        "vvix": 95.7,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 92,
+        "covered_call_score": 54,
+        "iron_condor_score": 39,
+        "cash_secured_put_score": 58
+      }
+    },
+    {
+      "id": 65,
+      "name": "CRISIS_VOL_STABLE_EXTREME_VIX",
+      "description": "Crisis volatility, stable, extreme VIX",
+      "market_conditions": {
+        "vix": 38.97,
+        "iv_percentile": 81.6,
+        "vvix": 62.2,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 53,
+        "iron_condor_score": 41,
+        "cash_secured_put_score": 70
+      }
+    },
+    {
+      "id": 66,
+      "name": "CRISIS_VOL_UNSTABLE_LOW_VIX",
+      "description": "Crisis volatility, unstable, low VIX",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 81.1,
+        "vvix": 79.4,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 42,
+        "iron_condor_score": 31,
+        "cash_secured_put_score": 63
+      }
+    },
+    {
+      "id": 67,
+      "name": "CRISIS_VOL_UNSTABLE_MID_VIX",
+      "description": "Crisis volatility, unstable, mid VIX",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 98.9,
+        "vvix": 69.0,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 112,
+        "covered_call_score": 49,
+        "iron_condor_score": 25,
+        "cash_secured_put_score": 43
+      }
+    },
+    {
+      "id": 68,
+      "name": "CRISIS_VOL_UNSTABLE_HIGH_IV",
+      "description": "Crisis volatility, unstable, high IV",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 86.6,
+        "vvix": 88.1,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 98,
+        "covered_call_score": 46,
+        "iron_condor_score": 27,
+        "cash_secured_put_score": 62
+      }
+    },
+    {
+      "id": 69,
+      "name": "CRISIS_VOL_UNSTABLE_VERY_HIGH_IV",
+      "description": "Crisis volatility, unstable, very high IV",
+      "market_conditions": {
+        "vix": 11.4,
+        "iv_percentile": 86.6,
+        "vvix": 88.1,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 98,
+        "covered_call_score": 45,
+        "iron_condor_score": 28,
+        "cash_secured_put_score": 62
+      }
+    },
+    {
+      "id": 70,
+      "name": "CRISIS_VOL_UNSTABLE_MID_HIGH_VIX",
+      "description": "Crisis volatility, unstable, mid-high VIX",
+      "market_conditions": {
+        "vix": 12.4,
+        "iv_percentile": 92.4,
+        "vvix": 52.8,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 105,
+        "covered_call_score": 53,
+        "iron_condor_score": 31,
+        "cash_secured_put_score": 54
+      }
+    },
+    {
+      "id": 71,
+      "name": "CRISIS_VOL_UNSTABLE_HIGH_VIX",
+      "description": "Crisis volatility, unstable, high VIX",
+      "market_conditions": {
+        "vix": 16.35,
+        "iv_percentile": 64.9,
+        "vvix": 50.0,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 94,
+        "covered_call_score": 54,
+        "iron_condor_score": 36,
+        "cash_secured_put_score": 76
+      }
+    },
+    {
+      "id": 72,
+      "name": "CRISIS_VOL_UNSTABLE_VERY_HIGH_VIX",
+      "description": "Crisis volatility, unstable, very high VIX",
+      "market_conditions": {
+        "vix": 19.68,
+        "iv_percentile": 81.9,
+        "vvix": 112.0,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 48,
+        "iron_condor_score": 29,
+        "cash_secured_put_score": 64
+      }
+    },
+    {
+      "id": 73,
+      "name": "CRISIS_VOL_UNSTABLE_ELEVATED_VIX",
+      "description": "Crisis volatility, unstable, elevated VIX",
+      "market_conditions": {
+        "vix": 21.88,
+        "iv_percentile": 95.0,
+        "vvix": 50.0,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 91,
+        "covered_call_score": 50,
+        "iron_condor_score": 31,
+        "cash_secured_put_score": 48
+      }
+    },
+    {
+      "id": 74,
+      "name": "CRISIS_VOL_UNSTABLE_EXTREME_VIX",
+      "description": "Crisis volatility, unstable, extreme VIX",
+      "market_conditions": {
+        "vix": 21.66,
+        "iv_percentile": 90.6,
+        "vvix": 87.2,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 97,
+        "covered_call_score": 45,
+        "iron_condor_score": 33,
+        "cash_secured_put_score": 46
+      }
+    },
+    {
+      "id": 75,
+      "name": "CRISIS_VOL_UNSTABLE_VERY_EXTREME_VIX",
+      "description": "Crisis volatility, unstable, very extreme VIX",
+      "market_conditions": {
+        "vix": 22.5,
+        "iv_percentile": 96.2,
+        "vvix": 103.7,
+        "regime": "CRISIS",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 86,
+        "covered_call_score": 53,
+        "iron_condor_score": 35,
+        "cash_secured_put_score": 54
+      }
+    },
+    {
+      "id": 76,
+      "name": "MIXED_LOW_TO_NORMAL_TRANSITION",
+      "description": "Transition from low to normal regime",
+      "market_conditions": {
+        "vix": 16.16,
+        "iv_percentile": 13.4,
+        "vvix": 99.7,
+        "regime": "LOW",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 72,
+        "covered_call_score": 87,
+        "iron_condor_score": 82,
+        "cash_secured_put_score": 60
+      }
+    },
+    {
+      "id": 77,
+      "name": "MIXED_NORMAL_TO_ELEVATED_TRANSITION",
+      "description": "Transition from normal to elevated regime",
+      "market_conditions": {
+        "vix": 20.53,
+        "iv_percentile": 67.8,
+        "vvix": 91.5,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 95,
+        "covered_call_score": 52,
+        "iron_condor_score": 36,
+        "cash_secured_put_score": 76
+      }
+    },
+    {
+      "id": 78,
+      "name": "MIXED_HIGH_VVIX_LOW_VIX",
+      "description": "High VVIX with low VIX - uncertainty",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 22.0,
+        "vvix": 101.8,
+        "regime": "LOW",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 68,
+        "covered_call_score": 88,
+        "iron_condor_score": 72,
+        "cash_secured_put_score": 63
+      }
+    },
+    {
+      "id": 79,
+      "name": "MIXED_EXTREME_VVIX",
+      "description": "Extremely high VVIX scenario",
+      "market_conditions": {
+        "vix": 15.88,
+        "iv_percentile": 60.6,
+        "vvix": 158.0,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 90,
+        "covered_call_score": 59,
+        "iron_condor_score": 40,
+        "cash_secured_put_score": 80
+      }
+    },
+    {
+      "id": 80,
+      "name": "MIXED_LOW_VVIX_HIGH_VIX",
+      "description": "Low VVIX with high VIX - compression",
+      "market_conditions": {
+        "vix": 21.94,
+        "iv_percentile": 49.5,
+        "vvix": 51.8,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 85,
+        "covered_call_score": 65,
+        "iron_condor_score": 46,
+        "cash_secured_put_score": 75
+      }
+    },
+     {
+      "id": 81,
+      "name": "BALANCED_MID_ALL_METRICS",
+      "description": "Balanced conditions across all metrics",
+      "market_conditions": {
+        "vix": 18.48,
+        "iv_percentile": 40.2,
+        "vvix": 151.6,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 82,
+        "covered_call_score": 75,
+        "iron_condor_score": 60,
+        "cash_secured_put_score": 81
+      }
+    },
+    {
+      "id": 82,
+      "name": "BALANCED_NEUTRAL_REGIME",
+      "description": "Neutral market with balanced scores",
+      "market_conditions": {
+        "vix": 27.68,
+        "iv_percentile": 35.6,
+        "vvix": 86.2,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 74,
+        "covered_call_score": 77,
+        "iron_condor_score": 68,
+        "cash_secured_put_score": 78
+      }
+    },
+    {
+      "id": 83,
+      "name": "EDGE_CASE_VERY_LOW_IV",
+      "description": "Edge case: VIX high but IV percentile very low",
+      "market_conditions": {
+        "vix": 22.24,
+        "iv_percentile": 5.0,
+        "vvix": 126.0,
+        "regime": "LOW",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 72,
+        "covered_call_score": 81,
+        "iron_condor_score": 78,
+        "cash_secured_put_score": 44
+      }
+    },
+    {
+      "id": 84,
+      "name": "EDGE_CASE_IRON_CONDOR_WINNER",
+      "description": "Rare case where Iron Condor wins",
+      "market_conditions": {
+        "vix": 21.47,
+        "iv_percentile": 5.0,
+        "vvix": 82.5,
+        "regime": "LOW",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 71,
+        "covered_call_score": 78,
+        "iron_condor_score": 82,
+        "cash_secured_put_score": 42
+      }
+    },
+    {
+      "id": 85,
+      "name": "EDGE_CASE_CSP_DOMINANT",
+      "description": "Cash Secured Put clearly dominant",
+      "market_conditions": {
+        "vix": 10.0,
+        "iv_percentile": 44.9,
+        "vvix": 69.9,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 77,
+        "covered_call_score": 69,
+        "iron_condor_score": 56,
+        "cash_secured_put_score": 81
+      }
+    },
+    {
+      "id": 86,
+      "name": "EDGE_CASE_COVERED_CALL_DOMINANT",
+      "description": "Covered Call clearly dominant",
+      "market_conditions": {
+        "vix": 22.93,
+        "iv_percentile": 13.0,
+        "vvix": 76.8,
+        "regime": "LOW",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 68,
+        "covered_call_score": 85,
+        "iron_condor_score": 85,
+        "cash_secured_put_score": 59
+      }
+    },
+    {
+      "id": 87,
+      "name": "EDGE_CASE_COLLAR_DOMINANT",
+      "description": "Collar score exceptionally high",
+      "market_conditions": {
+        "vix": 13.19,
+        "iv_percentile": 65.4,
+        "vvix": 68.8,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 90,
+        "covered_call_score": 58,
+        "iron_condor_score": 44,
+        "cash_secured_put_score": 80
+      }
+    },
+    {
+      "id": 88,
+      "name": "EDGE_CASE_ALL_SCORES_HIGH",
+      "description": "Unusual case where all strategies score well",
+      "market_conditions": {
+        "vix": 14.22,
+        "iv_percentile": 46.6,
+        "vvix": 117.2,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 83,
+        "covered_call_score": 73,
+        "iron_condor_score": 51,
+        "cash_secured_put_score": 82
+      }
+    },
+    {
+      "id": 89,
+      "name": "EDGE_CASE_ALL_SCORES_LOW",
+      "description": "Challenging market - all scores relatively low",
+      "market_conditions": {
+        "vix": 26.21,
+        "iv_percentile": 19.5,
+        "vvix": 94.2,
+        "regime": "LOW",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 65,
+        "covered_call_score": 83,
+        "iron_condor_score": 73,
+        "cash_secured_put_score": 58
+      }
+    },
+    {
+      "id": 90,
+      "name": "DEMO_BULL_MARKET_LOW_VOL",
+      "description": "Classic bull market: low volatility, stable",
+      "market_conditions": {
+        "vix": 12.14,
+        "iv_percentile": 41.6,
+        "vvix": 75.5,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 75,
+        "covered_call_score": 74,
+        "iron_condor_score": 62,
+        "cash_secured_put_score": 81
+      }
+    },
+    {
+      "id": 91,
+      "name": "DEMO_BEAR_MARKET_HIGH_VOL",
+      "description": "Bear market conditions: high volatility, unstable",
+      "market_conditions": {
+        "vix": 19.76,
+        "iv_percentile": 69.2,
+        "vvix": 50.0,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 92,
+        "covered_call_score": 51,
+        "iron_condor_score": 37,
+        "cash_secured_put_score": 74
+      }
+    },
+    {
+      "id": 92,
+      "name": "DEMO_CORRECTION_PHASE",
+      "description": "Market correction in progress",
+      "market_conditions": {
+        "vix": 28.91,
+        "iv_percentile": 36.9,
+        "vvix": 153.5,
+        "regime": "NORMAL",
+        "stability": "UNSTABLE"
+      },
+      "predictions": {
+        "collar_score": 76,
+        "covered_call_score": 72,
+        "iron_condor_score": 63,
+        "cash_secured_put_score": 72
+      }
+    },
+    {
+      "id": 93,
+      "name": "DEMO_MARKET_CRASH",
+      "description": "Crisis scenario: market crash conditions",
+      "market_conditions": {
+        "vix": 35.08,
+        "iv_percentile": 86.4,
+        "vvix": 95.7,
+        "regime": "CRISIS",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 92,
+        "covered_call_score": 54,
+        "iron_condor_score": 39,
+        "cash_secured_put_score": 58
+      }
+    },
+    {
+      "id": 94,
+      "name": "DEMO_RECOVERY_PHASE",
+      "description": "Post-crisis recovery phase",
+      "market_conditions": {
+        "vix": 20.35,
+        "iv_percentile": 51.5,
+        "vvix": 77.8,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 83,
+        "covered_call_score": 67,
+        "iron_condor_score": 49,
+        "cash_secured_put_score": 85
+      }
+    },
+    {
+      "id": 95,
+      "name": "DEMO_SIDEWAYS_MARKET",
+      "description": "Sideways choppy market - ideal for income",
+      "market_conditions": {
+        "vix": 19.59,
+        "iv_percentile": 46.7,
+        "vvix": 75.0,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 80,
+        "covered_call_score": 74,
+        "iron_condor_score": 54,
+        "cash_secured_put_score": 82
+      }
+    },
+    {
+      "id": 96,
+      "name": "DEMO_TRENDING_MARKET",
+      "description": "Strong trending market",
+      "market_conditions": {
+        "vix": 31.5,
+        "iv_percentile": 44.8,
+        "vvix": 112.0,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 78,
+        "covered_call_score": 70,
+        "iron_condor_score": 54,
+        "cash_secured_put_score": 75
+      }
+    },
+    {
+      "id": 97,
+      "name": "DEMO_EARNINGS_SEASON",
+      "description": "Elevated IV during earnings season",
+      "market_conditions": {
+        "vix": 16.1,
+        "iv_percentile": 44.5,
+        "vvix": 136.8,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 79,
+        "covered_call_score": 72,
+        "iron_condor_score": 55,
+        "cash_secured_put_score": 82
+      }
+    },
+    {
+      "id": 98,
+      "name": "DEMO_FOMC_MEETING",
+      "description": "Pre-FOMC meeting uncertainty",
+      "market_conditions": {
+        "vix": 19.54,
+        "iv_percentile": 38.7,
+        "vvix": 129.9,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 75,
+        "covered_call_score": 76,
+        "iron_condor_score": 59,
+        "cash_secured_put_score": 79
+      }
+    },
+    {
+      "id": 99,
+      "name": "DEMO_GEOPOLITICAL_STRESS",
+      "description": "Geopolitical tensions elevating volatility",
+      "market_conditions": {
+        "vix": 26.77,
+        "iv_percentile": 60.9,
+        "vvix": 81.6,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 84,
+        "covered_call_score": 64,
+        "iron_condor_score": 49,
+        "cash_secured_put_score": 81
+      }
+    },
+    {
+      "id": 100,
+      "name": "DEMO_EXTREME_UNCERTAINTY",
+      "description": "Maximum uncertainty scenario",
+      "market_conditions": {
+        "vix": 33.61,
+        "iv_percentile": 58.2,
+        "vvix": 89.0,
+        "regime": "NORMAL",
+        "stability": "STABLE"
+      },
+      "predictions": {
+        "collar_score": 86,
+        "covered_call_score": 62,
+        "iron_condor_score": 41,
+        "cash_secured_put_score": 79
+      }
+    }
+  ],
+  "metadata": {
+    "regime_coverage": {
+      "LOW": 10,
+      "NORMAL": 54,
+      "ELEVATED": 26,
+      "CRISIS": 10
+    },
+    "stability_coverage": {
+      "STABLE": 62,
+      "UNSTABLE": 38
+    },
+    "vix_range": {
+      "min": 10.0,
+      "max": 38.97,
+      "avg": 18.8
+    },
+    "iv_percentile_range": {
+      "min": 5.0,
+      "max": 98.9,
+      "avg": 55.3
+    }
+  }
+}
