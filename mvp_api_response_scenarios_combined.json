@@ -1,0 +1,227 @@
+{
+  "elevated": {
+    "currentVIX": 24.201190714442664,
+    "ivPercentile": 77.43594888343715,
+    "volatilityRegime": "ELEVATED",
+    "volatilityStability": "STABLE",
+    "strategies": {
+      "collar": {
+        "name": "Collar",
+        "description": "Best for normal-to-elevated volatility with downside protection",
+        "type": "protective",
+        "ruleScore": 99.62871676968084,
+        "modelScore": null,
+        "recommended": true,
+        "explanation": []
+      },
+      "covered-call": {
+        "name": "Covered Call",
+        "description": "Generate income while holding stock",
+        "type": "income",
+        "ruleScore": 53.91595617985692,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "cash-secured-put": {
+        "name": "Cash Secured Put",
+        "description": "Sell a put and hold enough cash to cover assignment",
+        "type": "income",
+        "ruleScore": 73.82852770780718,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "iron-condor": {
+        "name": "Iron Condor",
+        "description": "Profit in low volatility environments",
+        "type": "directionless",
+        "ruleScore": 33.9113318848537,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      }
+    },
+    "timestamp": "2026-03-01T00:38:59.165476Z"
+  },
+  "normal_unstable": {
+    "currentVIX": 25.08,
+    "ivPercentile": 47.0,
+    "volatilityRegime": "NORMAL",
+    "volatilityStability": "UNSTABLE",
+    "strategies": {
+      "collar": {
+        "name": "Collar",
+        "description": "Best for normal-to-elevated volatility with downside protection",
+        "type": "protective",
+        "ruleScore": 82.0,
+        "modelScore": null,
+        "recommended": true,
+        "explanation": []
+      },
+      "covered-call": {
+        "name": "Covered Call",
+        "description": "Generate income while holding stock",
+        "type": "income",
+        "ruleScore": 68.0,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "cash-secured-put": {
+        "name": "Cash Secured Put",
+        "description": "Sell a put and hold enough cash to cover assignment",
+        "type": "income",
+        "ruleScore": 72.0,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "iron-condor": {
+        "name": "Iron Condor",
+        "description": "Profit in low volatility environments",
+        "type": "directionless",
+        "ruleScore": 46.0,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      }
+    },
+    "timestamp": "2026-03-01T00:38:59.163284Z"
+  },
+  "low_unstable": {
+    "currentVIX": 8.647894123261043,
+    "ivPercentile": 15.410825963978,
+    "volatilityRegime": "LOW",
+    "volatilityStability": "UNSTABLE",
+    "strategies": {
+      "collar": {
+        "name": "Collar",
+        "description": "Best for normal-to-elevated volatility with downside protection",
+        "type": "protective",
+        "ruleScore": 69.17256624745008,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "covered-call": {
+        "name": "Covered Call",
+        "description": "Generate income while holding stock",
+        "type": "income",
+        "ruleScore": 77.22262376736968,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "cash-secured-put": {
+        "name": "Cash Secured Put",
+        "description": "Sell a put and hold enough cash to cover assignment",
+        "type": "income",
+        "ruleScore": 55.33851214679294,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "iron-condor": {
+        "name": "Iron Condor",
+        "description": "Profit in low volatility environments",
+        "type": "directionless",
+        "ruleScore": 82.90041124338362,
+        "modelScore": null,
+        "recommended": true,
+        "explanation": []
+      }
+    },
+    "timestamp": "2026-03-01T00:38:59.160050Z"
+  },
+  "low_stable": {
+    "currentVIX": 28.401833100684343,
+    "ivPercentile": 17.9694493340607,
+    "volatilityRegime": "LOW",
+    "volatilityStability": "STABLE",
+    "strategies": {
+      "collar": {
+        "name": "Collar",
+        "description": "Best for normal-to-elevated volatility with downside protection",
+        "type": "protective",
+        "ruleScore": 68.31852613813626,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "covered-call": {
+        "name": "Covered Call",
+        "description": "Generate income while holding stock",
+        "type": "income",
+        "ruleScore": 83.19603524082923,
+        "modelScore": null,
+        "recommended": true,
+        "explanation": []
+      },
+      "cash-secured-put": {
+        "name": "Cash Secured Put",
+        "description": "Sell a put and hold enough cash to cover assignment",
+        "type": "income",
+        "ruleScore": 63.30984638042239,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "iron-condor": {
+        "name": "Iron Condor",
+        "description": "Profit in low volatility environments",
+        "type": "directionless",
+        "ruleScore": 78.78574769653314,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      }
+    },
+    "timestamp": "2026-03-01T00:38:59.157671Z"
+  },
+  "normal_stable": {
+    "currentVIX": 10.0,
+    "ivPercentile": 46.4,
+    "volatilityRegime": "NORMAL",
+    "volatilityStability": "STABLE",
+    "strategies": {
+      "collar": {
+        "name": "Collar",
+        "description": "Best for normal-to-elevated volatility with downside protection",
+        "type": "protective",
+        "ruleScore": 83.0,
+        "modelScore": null,
+        "recommended": true,
+        "explanation": []
+      },
+      "covered-call": {
+        "name": "Covered Call",
+        "description": "Generate income while holding stock",
+        "type": "income",
+        "ruleScore": 70.0,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "cash-secured-put": {
+        "name": "Cash Secured Put",
+        "description": "Sell a put and hold enough cash to cover assignment",
+        "type": "income",
+        "ruleScore": 76.0,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      },
+      "iron-condor": {
+        "name": "Iron Condor",
+        "description": "Profit in low volatility environments",
+        "type": "directionless",
+        "ruleScore": 51.0,
+        "modelScore": null,
+        "recommended": false,
+        "explanation": []
+      }
+    },
+    "timestamp": "2026-03-01T00:38:59.162024Z"
+  }
+}
